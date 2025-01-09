@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>AURUM Shop</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+
+
+    <style>
+        .footer {
+            background-color: #FFD700;
+            /* Background color for the footer */
+            padding: 5px 0;
+            /* Add padding to the top and bottom */
+            text-align: center;
+            /* Center-align the content */
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <!-- Include the navigation bar -->
+    <%- include('navbar.ejs') %>
+
+        <br>
+        <h1 style="text-align: center;">Shop</h1>
+
+        <div class="container">
+            <a href="/shop?rec=1">Three Course Meal for Two at Royal Spice</a> <br>
+            <a href="/shop?rec=2">Horseriding Lesson</a> <br>
+            <a href="/shop?rec=3">Full Head Colour with Cut and Blow-Dry</a> <br>
+            <a href="/shop?rec=4">Double Room with Breakfast for Two in Ibiza</a> <br>
+            <a href="/shop?rec=5">8 Week Yoga and Mindfulness Classes</a> <br>
+            <a href="/shop?rec=6">Wild Ireland: Hotel Stay and Activities</a> <br>
+            <a href="/shop?rec=7">MoLI – Museum of Literature Ireland: Entry for Two Adults or Family of Six</a> <br>
+            <br><br>
+            <a class="btn btn-outline-warning submit-button" href="cart.html" role="button">Checkout</a>
+        </div>
+
+        <!-- Code Block take and adapted from: https://startbootstrap.com/template/shop-item-->
+        <!-- Shop items section-->
+        <section class="py-5 bg-light">
+            <div class="container px-4 px-lg-5 mt-5">
+                <h2 class="fw-bolder mb-4">Shop</h2>
+                <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
+
+                    <!-- Products-->
+                    <div class="col mb-5">
+                        <div class="card h-100">
+                            <!-- Product image-->
+                            <img class="card-img-top" src="image" alt="image" />
+                            <!-- Product details-->
+                            <div class="card-body p-4">
+                                <div class="text-center">
+                                    <!-- Product name-->
+                                    <h5 class="fw-bolder"> Product Name</h5>
+                                    <!-- Product price-->
+                                    <span class="text-muted text-decoration-line-through">€ Original Price</span>
+                                    € Current Price
+                                </div>
+                            </div>
+                            <!-- Product actions-->
+                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                                <div class="text-center"><a class="btn btn-outline-dark mt-auto"
+                                        href="/shop?rec=1">View</a></div>
+                            </div>
+                        </div>
+                    </div>
+        </section>
+        <!-- End of Code Block -->
+
+
+
+
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+
+        <br>
+
+        <footer class="footer">
+            <div class="container">
+                <p>&copy; 2024 AURUM</p>
+            </div>
+        </footer>
+
+</body>
+
+</html>
